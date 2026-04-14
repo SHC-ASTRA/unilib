@@ -1,0 +1,16 @@
+[build-system]
+requires = ["scikit-build-core>=0.10", "pybind11>=2.12"]
+build-backend = "scikit_build_core.build"
+
+[project]
+name = "unilib"
+version = "0.0.0"
+description = "ASTRA unilib"
+readme = "README.md"
+requires-python = ">=3.9"
+authors = [
+    { name = "Riley McLain", email = "rjm0037@uah.edu" }
+]
+
+[tool.scikit-build]
+wheel.expand-macos-universal-tags = true

@@ -1,0 +1,22 @@
+{
+    "name": "unilib",
+    "version": "0.0.0",
+    "description": "ASTRA unilib",
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/astra/unilib.git"
+    },
+    "authors": [
+        {
+            "name": "Riley McLain",
+            "email": "rjm0037@uah.edu"
+        }
+    ],
+    "license": "AGPL-3.0-only",
+    "frameworks": "*",
+    "platforms": "*",
+    "headers": "unilib/can_defs.hpp",
+    "build": {
+        "flags": ["-I include"]
+    }
+}

@@ -8,9 +8,9 @@
 #pragma once
 
 #ifdef ARDUINO
-#   include "Arduino.h"
+#    include "Arduino.h"
 #else
-#   include <cstdint>
+#    include <cstdint>
 #endif
 
 // X Macros for VicCAN data types

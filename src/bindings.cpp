@@ -9,15 +9,16 @@
 // Only usable from rover-ros2
 #ifndef ARDUINO
 
-#include "unilib/can_defs.hpp"
-#include <pybind11/pybind11.h>
+#    include <pybind11/pybind11.h>
+
+#    include "unilib/can_defs.hpp"
 
 namespace py = pybind11;
 
 // Helper macro to add enum values with docstrings
-#define PYBIND_ENUM_VALUE(NAME, VALUE, DOC) .value(#NAME, unilib::MessageType::NAME, DOC)
-#define PYBIND_MCU_VALUE(NAME, VALUE, DOC) .value(#NAME, unilib::Microcontroller::NAME, DOC)
-#define PYBIND_DTYPE_VALUE(NAME, VALUE, DOC) .value(#NAME, unilib::DataType::NAME, DOC)
+#    define PYBIND_ENUM_VALUE(NAME, VALUE, DOC) .value(#NAME, unilib::MessageType::NAME, DOC)
+#    define PYBIND_MCU_VALUE(NAME, VALUE, DOC) .value(#NAME, unilib::Microcontroller::NAME, DOC)
+#    define PYBIND_DTYPE_VALUE(NAME, VALUE, DOC) .value(#NAME, unilib::DataType::NAME, DOC)
 
 PYBIND11_MODULE(unilib, m, py::mod_gil_not_used()) {
     m.doc() = "ASTRA unilib - shared definitions for VicCAN protocol";

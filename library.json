@@ -1,7 +1,8 @@
 {
+    "$schema": "https://raw.githubusercontent.com/platformio/platformio-core/develop/platformio/assets/schema/library.json",
     "name": "unilib",
     "version": "0.0.0",
-    "description": "ASTRA unilib",
+    "description": "ASTRA's shared library between ROS2 and embedded.",
     "repository": {
         "type": "git",
         "url": "https://github.com/astra/unilib.git"
@@ -10,10 +11,14 @@
         {
             "name": "Riley McLain",
             "email": "rjm0037@uah.edu"
+        },
+        {
+            "name": "David Sharpe",
+            "email": "ds0196@uah.edu"
         }
     ],
     "license": "AGPL-3.0-only",
-    "frameworks": "*",
+    "frameworks": "arduino",
     "platforms": "*",
     "headers": "unilib/can_defs.hpp",
     "build": {

@@ -48,7 +48,15 @@
       "ID=6  | General\n"                                                       \
       "Send: EMPTY\n"                                                           \
       "Recv: EMPTY")                                                            \
-    /* 7-15: reserved */                                                        \
+    X(CMD_VERSION_COMMIT, 7,                                                    \
+      "ID=7  | General\n"                                                       \
+      "Send: EMPTY\n"                                                           \
+      "Recv: 32-bit commit hash, [0] = project, [1] = astra-embedded-lib")      \
+    X(CMD_VERSION_BUILD, 8,                                                     \
+      "ID=8  | General\n"                                                       \
+      "Send: EMPTY\n"                                                           \
+      "Recv: build timestamp in ASTRA epoch, main/dirty information")           \
+    /* 9-15: reserved */                                                        \
                                                                                 \
     /* REV Motor Control (16-23) */                                             \
     X(CMD_REV_STOP, 16,                                                         \

@@ -134,9 +134,9 @@
       "ID=37 | Submodule (FAERIE)\n"                                            \
       "Send: DOUBLE - direction\n"                                              \
       "Recv: EMPTY")                                                            \
-    X(CMD_FAERIE_UVLED, 38,                                                     \
-      "ID=38 | Submodule (FAERIE)\n"                                            \
-      "Send: DOUBLE - 0=off, 1=on\n"                                            \
+    X(CMD_CORE_LED_STRIP, 38,                                                   \
+      "ID=38 | Submodule (Core)\n"                                              \
+      "Send: INT16 x4 - red, green, blue (0-255)\n"                             \
       "Recv: EMPTY")                                                            \
     X(CMD_ARM_MANUAL, 39,                                                       \
       "ID=39 | Submodule (Arm)\n"                                               \

@@ -208,13 +208,13 @@
     /* 61-63: reserved */
 
 #define VICCAN_MICROCONTROLLERS(X)                       \
-    X(MCU_BROADCAST, 0, "Target all MCUs")               \
-    X(MCU_CORE, 1, "Core (navigation/drive)")            \
-    X(MCU_ARM, 2, "Arm submodule")                       \
-    X(MCU_DIGIT, 3, "Digit end-effector")                \
-    X(MCU_FAERIE, 4, "FAERIE science submodule")         \
-    X(MCU_CITADEL, 5, "CITADEL fluid control submodule") \
-    X(MCU_LIBS, 6, "LIBS laser submodule")
+    X(MCU_BROADCAST, 1, "Target all MCUs")               \
+    X(MCU_CORE, 2, "Core (navigation/drive)")            \
+    X(MCU_ARM, 3, "Arm submodule")                       \
+    X(MCU_DIGIT, 4, "Digit end-effector")                \
+    X(MCU_FAERIE, 5, "FAERIE science submodule")         \
+    X(MCU_CITADEL, 6, "CITADEL fluid control submodule") \
+    X(MCU_LIBS, 7, "LIBS laser submodule")
 
 #define VICCAN_DATA_TYPES(X)                                 \
     X(DT_1f64, 0, "1x double  - 8 bytes big-endian (>d)")    \

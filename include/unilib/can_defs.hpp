@@ -130,8 +130,8 @@
       "ID=36 | Submodule (Digit)\n"                                             \
       "Send: FLOAT32 x2 - [mode (0=manual, 1=ik), direction or target angle]\n" \
       "Recv: EMPTY")                                                            \
-    X(CMD_FAERIE_SKAKE, 37,                                                     \
-      "ID=37 | Submodule (FAERIE)\n"                                            \
+    X(CMD_LANCE_SHAKE, 37,                                                      \
+      "ID=37 | Submodule (LANCE)\n"                                             \
       "Send: DOUBLE - direction\n"                                              \
       "Recv: EMPTY")                                                            \
     X(CMD_CORE_LED_STRIP, 38,                                                   \
@@ -151,8 +151,8 @@
       "ID=41 | Submodule (Core)\n"                                              \
       "Send: FLOAT32 x2 - [direction (0-360 deg), timeout (seconds)]\n"         \
       "Recv: EMPTY")                                                            \
-    X(CMD_FAERIE_LINEAR_AC, 42,                                                 \
-      "ID=42 | Submodule (FAERIE)\n"                                            \
+    X(CMD_LANCE_LINEAR_AC, 42,                                                  \
+      "ID=42 | Submodule (LANCE)\n"                                             \
       "Send: DOUBLE - -1=retract, 0=stop, 1=extend (changing to FLOAT32)\n"     \
       "Recv: EMPTY")                                                            \
     X(CMD_ARM_IK_TARGET_VELOCITY, 43,                                           \
@@ -212,7 +212,7 @@
     X(MCU_CORE, 2, "Core (navigation/drive)")            \
     X(MCU_ARM, 3, "Arm submodule")                       \
     X(MCU_DIGIT, 4, "Digit end-effector")                \
-    X(MCU_FAERIE, 5, "FAERIE science submodule")         \
+    X(MCU_LANCE, 5, "LANCE science submodule")           \
     X(MCU_CITADEL, 6, "CITADEL fluid control submodule") \
     X(MCU_LIBS, 7, "LIBS laser submodule")
 

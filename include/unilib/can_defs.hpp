@@ -165,7 +165,7 @@
       "Recv: EMPTY")                                                            \
     X(CMD_CITADEL_VALVES, 45,                                                   \
       "ID=45 | Submodule (CITADEL)\n"                                           \
-      "Send: INT16 x4 - set state of valves. 1 -> open, 0 -> close\n"           \
+      "Send: DOUBLE - Valve ID to open (0-2), or -1 to close all\n"             \
       "Recv: EMPTY")                                                            \
     /* 46-47: reserved */                                                       \
                                                                                 \

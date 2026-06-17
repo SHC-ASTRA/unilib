@@ -163,7 +163,11 @@
       "ID=44 | Submodule (LIBS)\n"                                              \
       "Send: DOUBLE - fire the LIBS laser\n"                                    \
       "Recv: EMPTY")                                                            \
-    /* 45-47: reserved */                                                       \
+    X(CMD_CITADEL_VALVES, 45,                                                   \
+      "ID=45 | Submodule (CITADEL)\n"                                           \
+      "Send: DOUBLE - Valve ID to open (0-2), or -1 to close all\n"             \
+      "Recv: EMPTY")                                                            \
+    /* 46-47: reserved */                                                       \
                                                                                 \
     /* Feedback (48-63) */                                                      \
     X(CMD_GNSS_LAT, 48,                                                         \
